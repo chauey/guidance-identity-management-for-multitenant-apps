@@ -1,0 +1,76 @@
+{
+  "appId": "d0b52ea4-cf0e-4fc1-9b64-f9d0d8a1a9d0",
+  "appRoles": [
+    {
+      "allowedMemberTypes": [ "User" ],
+      "description": "Creators can create surveys",
+      "displayName": "SurveyCreator",
+      "id": "00000000-1C29-4547-98B7-1B68DF108E5E",
+      "isEnabled": true,
+      "value": "SurveyCreator"
+    },
+    {
+      "allowedMemberTypes": [ "User" ],
+      "description": "Administrators can manage the surveys in their tenant",
+      "displayName": "SurveyAdmin",
+      "id": "00000001-1C29-4547-98B7-1B68DF108E5E",
+      "isEnabled": true,
+      "value": "SurveyAdmin"
+    }
+  ],
+  "availableToOtherTenants": false,
+  "displayName": "Surveys.WebAPI",
+  "errorUrl": null,
+  "groupMembershipClaims": null,
+  "homepage": "https://localhost:44301/",
+  "identifierUris": [
+    "https://chaueyhotmail.onmicrosoft.com/surveys.webapi"
+  ],
+  "keyCredentials": [ ],
+  "knownClientApplications": ["d22e0714-ab5c-449d-a91f-19385a099bcf"],
+  "logoutUrl": null,
+  "oauth2AllowImplicitFlow": false,
+  "oauth2AllowUrlPathMatching": false,
+  "oauth2Permissions": [
+    {
+      "adminConsentDescription": "Allow the application to access Surveys.WebAPI on behalf of the signed-in user.",
+      "adminConsentDisplayName": "Access Surveys.WebAPI",
+      "id": "7c0a5750-70ee-443b-8780-e8c9d99de568",
+      "isEnabled": true,
+      "type": "User",
+      "userConsentDescription": "Allow the application to access Surveys.WebAPI on your behalf.",
+      "userConsentDisplayName": "Access Surveys.WebAPI",
+      "value": "user_impersonation"
+    }
+  ],
+  "oauth2RequirePostResponse": false,
+  "passwordCredentials": [ ],
+  "publicClient": null,
+  "replyUrls": [
+    "https://localhost:44301/"
+  ],
+  "requiredResourceAccess": [
+    {
+      "resourceAppId": "00000002-0000-0000-c000-000000000000",
+      "resourceAccess": [
+        {
+          "id": "311a71cc-e848-46a1-bdf8-97ff7156d8e6",
+          "type": "Scope"
+        }
+      ]
+    }
+  ],
+  "samlMetadataUrl": null,
+  "extensionProperties": [ ],
+  "objectType": "Application",
+  "objectId": "dbe721a5-89d1-4117-b0bf-5b896ee9c559",
+  "deletionTimestamp": null,
+  "createdOnBehalfOf": null,
+  "createdObjects": [ ],
+  "manager": null,
+  "directReports": [ ],
+  "members": [ ],
+  "memberOf": [ ],
+  "owners": [ ],
+  "ownedObjects": [ ]
+}

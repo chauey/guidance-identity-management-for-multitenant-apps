@@ -146,7 +146,7 @@ Update the application manifest for the web API.
 Now repeat the same steps for the Surveys app, except do not add an entry for `knownClientApplications`. Use the same role definitions, but generate new GUIDs for the IDs.
 
 ## Step 6. Create a new Redis Cache instance
-
+*DNA/Chau*: didn't do this step, assuming it will fall-back and use inmemory cahce?
 The Surveys application uses Redis to cache OAuth 2 access tokens. To create the cache:
 
 1.	Go to [https://portal.azure.com](https://portal.azure.com) and click **New** > **Data + Storage** > **Redis Cache**.
@@ -177,6 +177,21 @@ For more information about creating a Redis cache, see [How to Use Azure Redis C
               }
           }
 
+
+*DNA/Chau* This is what I used, notice the Redis is not configured.
+
+        {
+          "AzureAd": {
+            "ClientId": "d22e0714-ab5c-449d-a91f-19385a099bcf",
+            "ClientSecret": "HptknkRQGLyJzMki+CZqYnoRhuHpdPWmVgevjbe3uqo=",
+            "PostLogoutRedirectUri": "https://localhost:44300/",
+            "WebApiResourceId": "https://chaueyhotmail.onmicrosoft.com/surveys.webapi"
+          },
+          "Redis": {
+            "Configuration": "// UNDONE: [Redis DNS name].redis.cache.windows.net,password=[Redis primary key],ssl=true"
+          }
+        }
+
     Replace the entries in [square brackets] with the correct values.
 
     - `AzureAd:ClientId`: The client ID of the Surveys app.
@@ -196,6 +211,18 @@ For more information about creating a Redis cache, see [How to Use Azure Redis C
                 "Configuration": "[Redis DNS name].redis.cache.windows.net,password=[Redis primary key],ssl=true"
               }
           }
+
+*DNA/Chau*: and here is the one for the WebApi
+
+        {
+          "AzureAd": {
+            "WebApiResourceId": "https://chaueyhotmail.onmicrosoft.com/surveys.webapi"
+          },
+          "Redis": {
+            "Configuration": "// UNDONE: [Redis DNS name].redis.cache.windows.net,password=[Redis primary key],ssl=true"
+          }
+        }
+
 
       Replace the entries in [square brackets] with the correct values, as above.
 

@@ -1,0 +1,93 @@
+{
+  "appId": "d22e0714-ab5c-449d-a91f-19385a099bcf",
+  "appRoles": [
+    {
+      "allowedMemberTypes": [ "User" ],
+      "description": "Creators can create surveys",
+      "displayName": "SurveyCreator",
+      "id": "00000002-1C29-4547-98B7-1B68DF108E5E",
+      "isEnabled": true,
+      "value": "SurveyCreator"
+    },
+    {
+      "allowedMemberTypes": [ "User" ],
+      "description": "Administrators can manage the surveys in their tenant",
+      "displayName": "SurveyAdmin",
+      "id": "00000003-1C29-4547-98B7-1B68DF108E5E",
+      "isEnabled": true,
+      "value": "SurveyAdmin"
+    }
+  ],
+  "availableToOtherTenants": false,
+  "displayName": "Surveys",
+  "errorUrl": null,
+  "groupMembershipClaims": null,
+  "homepage": "https://localhost:44300/",
+  "identifierUris": [
+    "https://chaueyhotmail.onmicrosoft.com/surveys"
+  ],
+  "keyCredentials": [ ],
+  "knownClientApplications": [ ],
+  "logoutUrl": null,
+  "oauth2AllowImplicitFlow": false,
+  "oauth2AllowUrlPathMatching": false,
+  "oauth2Permissions": [
+    {
+      "adminConsentDescription": "Allow the application to access Surveys on behalf of the signed-in user.",
+      "adminConsentDisplayName": "Access Surveys",
+      "id": "9802512b-962d-42f2-a302-a4420b8f41c0",
+      "isEnabled": true,
+      "type": "User",
+      "userConsentDescription": "Allow the application to access Surveys on your behalf.",
+      "userConsentDisplayName": "Access Surveys",
+      "value": "user_impersonation"
+    }
+  ],
+  "oauth2RequirePostResponse": false,
+  "passwordCredentials": [
+    {
+      "customKeyIdentifier": null,
+      "endDate": "2017-03-29T12:52:59.0838254Z",
+      "keyId": "677c8899-9d68-48ef-af54-1aec0fc05137",
+      "startDate": "2016-03-29T12:52:59.0838254Z",
+      "value": null
+    }
+  ],
+  "publicClient": null,
+  "replyUrls": [
+    "https://localhost:44300/"
+  ],
+  "requiredResourceAccess": [
+    {
+      "resourceAppId": "d0b52ea4-cf0e-4fc1-9b64-f9d0d8a1a9d0",
+      "resourceAccess": [
+        {
+          "id": "7c0a5750-70ee-443b-8780-e8c9d99de568",
+          "type": "Scope"
+        }
+      ]
+    },
+    {
+      "resourceAppId": "00000002-0000-0000-c000-000000000000",
+      "resourceAccess": [
+        {
+          "id": "311a71cc-e848-46a1-bdf8-97ff7156d8e6",
+          "type": "Scope"
+        }
+      ]
+    }
+  ],
+  "samlMetadataUrl": null,
+  "extensionProperties": [ ],
+  "objectType": "Application",
+  "objectId": "f5cdeaca-c752-4e42-9a93-3ab039ec7c7a",
+  "deletionTimestamp": null,
+  "createdOnBehalfOf": null,
+  "createdObjects": [ ],
+  "manager": null,
+  "directReports": [ ],
+  "members": [ ],
+  "memberOf": [ ],
+  "owners": [ ],
+  "ownedObjects": [ ]
+}
